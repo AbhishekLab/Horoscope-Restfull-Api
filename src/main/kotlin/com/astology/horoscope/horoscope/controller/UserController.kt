@@ -11,7 +11,7 @@ import org.springframework.mail.SimpleMailMessage
 import org.springframework.mail.javamail.JavaMailSender
 import org.springframework.web.bind.annotation.*
 
-@Api(value = "Student Information related interface", tags = ["Student"])
+@Api(value = "Horoscope Information related interface", tags = ["Horoscope"])
 @RestController
 @RequestMapping("/v1")
 class UserController {
@@ -26,7 +26,7 @@ class UserController {
 
 
     //dummy home page for testing
-    @ApiOperation(value = "Keep a Student Information")
+    @ApiOperation(value = "Dummy page")
     @GetMapping("/home")
     fun home():String{
         return "Hi this is Home Page"
