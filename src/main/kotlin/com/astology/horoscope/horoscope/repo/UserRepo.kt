@@ -13,4 +13,7 @@ interface UserRegistrationRepo : JpaRepository<UserRegistration, Long> {
 
     @Query("select c From UserRegistration c Where c.email = :e and c.password = :p")
     fun login(@Param("e") email : String, @Param("p") password : String) : List<UserRegistration>
+    @Query("select c From UserRegistration c Where c.email = :e")
+    fun findByUserEmail(@Param("e") email : String): UserRegistration
 }
+

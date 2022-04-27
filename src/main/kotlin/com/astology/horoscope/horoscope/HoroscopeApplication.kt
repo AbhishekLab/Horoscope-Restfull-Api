@@ -6,6 +6,11 @@ import org.springframework.boot.runApplication
 @SpringBootApplication
 class HoroscopeApplication
 
-fun main(args: Array<String>) {
-	runApplication<HoroscopeApplication>(*args)
-}
+	fun main(args: Array<String>) {
+		runApplication<HoroscopeApplication>(*args)
+	}
+
+
+
+
+

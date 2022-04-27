@@ -35,7 +35,11 @@ dependencies {
 	//send email
 	implementation("org.springframework.boot:spring-boot-starter-mail")
 
-
+	//spring security
+	implementation("org.springframework.boot:spring-boot-starter-security")
+	//json web token
+	implementation("io.jsonwebtoken:jjwt:0.9.1")
+	implementation("javax.xml.bind:jaxb-api:2.4.0-b180830.0359")
 
 }
 
